@@ -36,4 +36,4 @@ class Adddb:
 	def POST(self):
 		i = web.input()
 		n = db.insert('todo',title=i.title)
-		raise web.seeother('/')
+		raise web.seeother('/Createdb')
