@@ -20,7 +20,7 @@ render = web.template.render(templates_root)
 
 class index:
 	def GET(self):
-		return render.index(name = "Hello World")
+		return render.index(word = 'Hello World')
 
 class hello:
 	def GET(self):
