@@ -5,6 +5,7 @@ import web
 from web.contrib.template import render_jinja
 from mysqlcha import Createdb
 
+web.config.debug = True
 
 urls = ("/","index",
 		"/hello","hello",
