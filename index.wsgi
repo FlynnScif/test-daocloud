@@ -3,11 +3,13 @@ import os
 import sae
 import web
 from web.contrib.template import render_jinja
+from MYSQLDB import Createdb
 
 
 urls = ("/","index",
 		"/hello","hello",
-		"/api","api"
+		"/api","api",
+		"/createdb","createdb"
         )
 
 app_root = os.path.dirname(__file__)
