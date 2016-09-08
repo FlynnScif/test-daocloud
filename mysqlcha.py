@@ -15,5 +15,5 @@ class Createdb:
 		self.render = web.template.render(self.templates_root)
 
     def GET(self):
-        return render.index()  
+        return render.hellodb()  
 
