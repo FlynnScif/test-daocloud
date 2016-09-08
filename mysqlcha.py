@@ -16,3 +16,5 @@ class Createdb:
 
 	def GET(self):
 		return render.hellodb()
+#		return render.index()
+#
