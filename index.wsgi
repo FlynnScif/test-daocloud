@@ -3,7 +3,7 @@ import os
 import sae
 import web
 from web.contrib.template import render_jinja
-from 
+
 
 urls = ("/","index",
 		"/hello","hello",
