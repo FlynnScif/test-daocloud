@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="http://im.kdweibo.com/pub/js/qingjs.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+ window.onload = function()
+        {
+XuntongJSBridge.call("switchCompany",  {
+       "eid":"10109"
+   }, function(result) {
+      alert("结果："+JSON.stringify(result));
+});
+
+
+ }</script>
+	
+
+
+</body>
+
+</html>
