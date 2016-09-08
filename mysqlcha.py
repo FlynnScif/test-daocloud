@@ -3,7 +3,7 @@ import os
 import sae
 import web
 from web.contrib.template import render_jinja
-from mysqlcha import Createdb
+#from mysqlcha import Createdb
 
 web.config.debug = True
 
@@ -15,5 +15,5 @@ class Createdb:
 		self.render = web.template.render(self.templates_root)
 
     def GET(self):
-        return self.render.index()  
+        return render.index()  
 
