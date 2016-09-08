@@ -3,10 +3,11 @@ import os
 import sae
 import web
 from web.contrib.template import render_jinja
+import sae.const 
 #from mysqlcha import Createdb
 
 web.config.debug = True
-db = web.database(dbn='mysql',user='45m4jo5z33',pw='hl3mj5kim1j0l0iyxyl4524z2mj5055y1xw53yyk',db='app_yzjapi')
+db = web.database(dbn='mysql',port=int(sae.const.MYSQL_PORT),host=sae.const.MYSQL_HOST,user=sae.const.MYSQL_USER,pw=sae.const.MYSQL_PASS,db='app_yzjapi')
 
 class Createdb:
 
