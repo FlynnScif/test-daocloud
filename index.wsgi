@@ -3,9 +3,11 @@ import os
 import sae
 import web
 from web.contrib.template import render_jinja
+from 
 
 urls = ("/","index",
-		"/hello","hello"
+		"/hello","hello",
+		"/api","api"
         )
 
 app_root = os.path.dirname(__file__)
@@ -20,6 +22,10 @@ class index:
 class hello:
 	def GET(self):
 		return render.hello()
+
+class api:
+	def GET(self):
+		return render.api()
 
 
 
