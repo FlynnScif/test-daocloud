@@ -14,6 +14,5 @@ class Createdb:
 		self.templates_root = os.path.join(self.app_root,'templates')
 		self.render = web.template.render(self.templates_root)
 
-    def GET(self):
-        return render.hellodb()  
-
+	def GET(self):
+		return render.hellodb()
