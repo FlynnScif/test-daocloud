@@ -4,7 +4,8 @@ import sae
 import web
 from web.contrib.template import render_jinja
 
-urls = ("/","index"
+urls = ("/","index",
+		"/hello","hello"
         )
 
 app_root = os.path.dirname(__file__)
@@ -15,6 +16,10 @@ render = web.template.render(templates_root)
 class index:
 	def GET(self):
 		return render.index()
+
+class hello:
+	def GET(self):
+		return render.hello()
 
 
 
