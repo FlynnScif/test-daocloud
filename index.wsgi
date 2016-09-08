@@ -6,6 +6,7 @@ from web.contrib.template import render_jinja
 
 urls = ("/","index",
 		"/hello","hello"
+		"/api","api"
         )
 
 app_root = os.path.dirname(__file__)
@@ -20,6 +21,10 @@ class index:
 class hello:
 	def GET(self):
 		return render.hello()
+
+class api:
+	def GET(self):
+		return render.api()
 
 app = web.application(urls,globals()).wsgifunc()        
 application = sae.create_wsgi_app(app)
