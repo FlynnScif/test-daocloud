@@ -3,15 +3,16 @@ import os
 import sae
 import web
 from web.contrib.template import render_jinja
+from mysqlcha import Createdb
 
 web.config.debug = True
 
 class Createdb:
 
 	def __init__(self):
-		app_root = os.path.dirname(__file__)
-		templates_root = os.path.join(app_root,'templates')
-		render = web.template.render(templates_root)
+		self.app_root = os.path.dirname(__file__)
+		self.templates_root = os.path.join(self.app_root,'templates')
+		self.render = web.template.render(self.templates_root)
 
 	def GET(self):
-		return render.hellodb()
+		return self.render.hellodb()
