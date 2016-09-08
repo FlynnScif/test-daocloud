@@ -4,13 +4,15 @@ import sae
 import web
 from web.contrib.template import render_jinja
 from mysqlcha import Createdb
+from getandpost import Postdm
 
 web.config.debug = True
 
 urls = ("/","index",
 		"/hello","hello",
 		"/api","api",
-		"/createdb","Createdb"
+		"/createdb","Createdb",
+		"/postdm","Postdm"
         )
 
 app_root = os.path.dirname(__file__)

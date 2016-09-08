@@ -1,9 +1,15 @@
-!<!DOCTYPE html>
+$def with (todos)
+<!DOCTYPE html>
 <html>
 <head>
 	<title>hello mysql</title>
 </head>
 <body>
+<ul>
 <h1>hello mysql</h1>
+$for todo in todos:
+<li id="t$todo.id">$todo.title</li>
+</ul>
+
 </body>
 </html>
