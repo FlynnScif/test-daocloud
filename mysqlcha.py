@@ -22,7 +22,7 @@ class Showdb:
 
 	def GET(self):
 		todos = db.select('todo')
-		return self.render.hellodb(todos)
+		return self.render.showdb(todos)
 #		return self.render.hellodb()
 #		return render.index()
 
