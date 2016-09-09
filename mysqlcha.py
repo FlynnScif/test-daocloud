@@ -13,7 +13,7 @@ db = web.database(dbn='mysql', port=int(sae.const.MYSQL_PORT), host=sae.const.MY
 
 
 
-class Createdb:
+class Showdb:
 
 	def __init__(self):
 		self.app_root = os.path.dirname(__file__)
@@ -36,4 +36,4 @@ class Adddb:
 	def POST(self):
 		i = web.input()
 		n = db.insert('todo',title=i.title)
-		raise web.seeother('/createdb')
+		raise web.seeother('/showdb')

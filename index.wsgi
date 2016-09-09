@@ -3,7 +3,7 @@ import os
 import sae
 import web
 from web.contrib.template import render_jinja
-from mysqlcha import Createdb
+from mysqlcha import Showdb
 from mysqlcha import Adddb
 #from getandpost import Postdm
 
@@ -12,7 +12,7 @@ web.config.debug = True
 urls = ("/","index",
 		"/hello","hello",
 		"/api","api",
-		"/createdb","Createdb",
+		"/showdb","Showdb",
 		"/add","Adddb"
 		#"/postdm","Postdm"
         )
